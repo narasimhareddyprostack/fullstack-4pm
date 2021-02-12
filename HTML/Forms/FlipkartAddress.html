@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>FCart Address Form</h1>
+    <form autocomplete="off">
+      <input
+        type="text"
+        placeholder="Name"
+        required
+        tabindex="1"
+        value="Linson"
+      />
+      <input
+        type="text"
+        placeholder="10-digit Mobile Number"
+        required
+        tabindex="1"
+      />
+      <br /><br />
+      <input type="text" placeholder="Pincode" required autocomplete="off" />
+      <input type="text" placeholder="Locality" required autocomplete="off" />
+      <br />
+      <br />
+      <textarea
+        rows="5"
+        cols="48"
+        placeholder="Address(street and area)"
+        autocomplete="on"
+      ></textarea>
+      <br /><br />
+      <input type="text" placeholder="city/Dist/Town" /><select>
+        <option>MP</option>
+        <option>UP</option>
+        <option>MP</option>
+        <option>UP</option>
+        <option>MP</option>
+        <option>UttarPradesh</option>
+      </select>
+      <br /><br />
+      <label> Address Type</label>
+      <input type="radio" /> Home <input type="radio" /> Office <br /><br />
+      <button type="submit">Save</button>
+    </form>
+  </body>
+</html>
