@@ -1,9 +1,8 @@
 let App = () => {
   return (
-    <div>
-      <h1>Hello, GE</h1>
-      <h1>PSA</h1>
-    </div>
+    <>
+      <h1>Hello</h1>
+    </>
   );
 };
 export default App;
