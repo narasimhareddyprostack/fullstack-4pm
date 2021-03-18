@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@17/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+  <script type="text/babel">
+    function Navbar() {
+      return (
+        <nav class="navbar navbar-dark bg-dark">
+          <a href="/">React - Index Page without Installation</a>
+          <ul class="list-group">
+            <li class="list-group-item"> Home</li>
+          </ul>
+        </nav>
+      );
+    }
+    function App() {
+      return (
+        <div>
+          <Navbar />
+          <h1>Hello, Good Evening</h1>
+          <h2> Welcome to PSA</h2>
+          <button class="btn btn-primary"> Submit</button>
+        </div>
+      );
+    }
+    ReactDOM.render(<App />, document.getElementById("root"));
+  </script>
+</html>
