@@ -1,8 +1,11 @@
-let App = () => {
+import React from "react";
+import Product from "./PropsTwo/Product";
+function App() {
   return (
-    <>
-      <h1>Hello</h1>
-    </>
+    <div>
+      <Product />
+    </div>
   );
-};
+}
+
 export default App;
