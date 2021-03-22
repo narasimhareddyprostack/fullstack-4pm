@@ -1,11 +1,15 @@
 import React from "react";
-import Product from "./PropsTwo/Product";
-function App() {
+import Message from "./components/Message";
+import Counter from "./components/Counter";
+let App = () => {
   return (
-    <div>
-      <Product />
-    </div>
+    <>
+      <h1> React State Example</h1>
+      <hr />
+      <Message />
+      <hr />
+      <Counter />
+    </>
   );
-}
-
+};
 export default App;
