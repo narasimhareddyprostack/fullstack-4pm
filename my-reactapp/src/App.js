@@ -1,14 +1,14 @@
 import React from "react";
-import Message from "./components/Message";
-import Counter from "./components/Counter";
+import Message from "./components/Message/Message";
+import "../src/Assets/css/learn.css";
+
 let App = () => {
   return (
     <>
-      <h1> React State Example</h1>
-      <hr />
+      <nav className="nav navbar-dark bg-dark">
+        <a href="/"> React State Example</a>
+      </nav>
       <Message />
-      <hr />
-      <Counter />
     </>
   );
 };
