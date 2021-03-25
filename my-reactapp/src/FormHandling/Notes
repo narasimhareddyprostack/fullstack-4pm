@@ -1,0 +1,6 @@
+React Form Handling - Class Component 
+1. Prepare UI/View 
+2. create State obj to hold/capture the input field data 
+   ie prepare state properties based on input fields 
+3. To update state/ to capture / to get input field data 
+   need to implement event handler ie onChange = {}
