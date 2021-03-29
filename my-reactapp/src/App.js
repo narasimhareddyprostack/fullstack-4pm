@@ -6,7 +6,7 @@ import "../src/Assets/css/learn.css";
 /* import Login from "./FormHandling/Login";
  */
 /* import BootStrapLoginForm from "./FormHandling/BootStrapLoginForm"; */
-/* import ContactTable from "./TableData/ContactTable"; */
+import ContactTable from "./TableData/ContactTable";
 import Signin from "./components/Signin/Signin";
 let App = () => {
   return (
@@ -14,8 +14,9 @@ let App = () => {
       <nav className="nav navbar-dark bg-dark">
         <a href="/"> React Table Example</a>
       </nav>
-      <Signin />
-      <Message />
+      {/*  <Signin />
+      <Message /> */}
+      <ContactTable />
     </>
   );
 };

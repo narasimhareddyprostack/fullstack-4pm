@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 
 class ContactTable extends Component {
+  state = {
+    selectedContact: {},
+  };
   contacts = [
     {
       gender: "male",
@@ -1257,13 +1260,16 @@ class ContactTable extends Component {
       nat: "IE",
     },
   ];
-
+  selectedContact = (contact) => {
+    console.log(contact.name.first);
+    this.setState({ selectedContact: contact });
+  };
   render() {
     return (
       <React.Fragment>
         <div className="container mt-4">
           <div className="row">
-            <div className="col-md-10">
+            <div className="col-md-8">
               <table className="table table-hover    table-striped">
                 <thead>
                   <tr>
@@ -1276,7 +1282,9 @@ class ContactTable extends Component {
                 <tbody>
                   {this.contacts.map((contact) => {
                     return (
-                      <tr>
+                      <tr
+                        onMouseOver={this.selectedContact.bind(this, contact)}
+                      >
                         <td>{contact.name.first}</td>
                         <td>{contact.email}</td>
                         <td>{contact.dob.age}</td>
@@ -1286,6 +1294,24 @@ class ContactTable extends Component {
                   })}
                 </tbody>
               </table>
+            </div>
+            <div className="col-md-4">
+              <pre>{JSON.stringify(this.state.selectedContact)}</pre>
+              {Object.keys(this.state.selectedContact).length > 0 ? (
+                <>
+                  <div className="card">
+                    <div className="card-header">
+                      <img
+                        src={this.state.selectedContact.picture.large}
+                        alt="hello"
+                      />
+                    </div>
+                    <div className="card-body">
+                      {this.state.selectedContact.name.first}
+                    </div>
+                  </div>
+                </>
+              ) : null}
             </div>
           </div>
         </div>
