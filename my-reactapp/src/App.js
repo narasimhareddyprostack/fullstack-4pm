@@ -1,23 +1,30 @@
 import React from "react";
-/* import WishOne from "./StateEx/WishOne"; */
-/* import Counter from "./StateEx/Counter"; */
-import Message from "./components/Message/Message";
 import "../src/Assets/css/learn.css";
-/* import Login from "./FormHandling/Login";
- */
-/* import BootStrapLoginForm from "./FormHandling/BootStrapLoginForm"; */
+import Navbar from "./Routing/Navbar";
+import { BrowserRouter as Router, Switch, Link, Route } from "react-router-dom";
 import ContactTable from "./TableData/ContactTable";
-import Signin from "./components/Signin/Signin";
+import Login from './FormHandling/Login'
 let App = () => {
   return (
     <>
-      <nav className="nav navbar-dark bg-dark">
-        <a href="/"> React Table Example</a>
-      </nav>
-      {/*  <Signin />
-      <Message /> */}
-      <ContactTable />
+      <Router>
+        <Navbar />
+        <Switch>
+          <Route path="/contacts" component={ContactTable} />
+          <Route path="/login" component={Login} />
+        </Switch>
+      </Router>
     </>
   );
 };
 export default App;
+
+/* import WishOne from "./StateEx/WishOne"; */
+/* import Counter from "./StateEx/Counter"; */
+/* import Message from "./components/Message/Message";
+ */
+/* import Login from "./FormHandling/Login";
+ */
+/* import BootStrapLoginForm from "./FormHandling/BootStrapLoginForm"; */
+/* import ContactTable from "./TableData/ContactTable";
+import Signin from "./components/Signin/Signin"; */
