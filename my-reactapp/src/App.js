@@ -3,7 +3,8 @@ import "../src/Assets/css/learn.css";
 import Navbar from "./Routing/Navbar";
 import { BrowserRouter as Router, Switch, Link, Route } from "react-router-dom";
 import ContactTable from "./TableData/ContactTable";
-import Login from './FormHandling/Login'
+import Login from "./FormHandling/Login";
+import ContactList from "./Axios/ContactList";
 let App = () => {
   return (
     <>
@@ -12,6 +13,7 @@ let App = () => {
         <Switch>
           <Route path="/contacts" component={ContactTable} />
           <Route path="/login" component={Login} />
+          <Route path="/contactdata" component={ContactList} />
         </Switch>
       </Router>
     </>

@@ -35,6 +35,11 @@ let Navbar = () => {
                   Login
                 </Link>
               </li>
+              <li class="nav-item">
+                <Link class="nav-link" to="/contactdata">
+                  Contact Data - Axios
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
