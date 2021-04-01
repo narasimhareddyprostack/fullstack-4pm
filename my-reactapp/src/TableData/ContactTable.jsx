@@ -1283,6 +1283,7 @@ class ContactTable extends Component {
                   {this.contacts.map((contact) => {
                     return (
                       <tr
+                        key={contact.email}
                         onMouseOver={this.selectedContact.bind(this, contact)}
                       >
                         <td>{contact.name.first}</td>
