@@ -46,6 +46,7 @@ let Navbar = () => {
                 </Link>
               </li>
             </ul>
+            {employee.name}
           </div>
         </div>
       </nav>
