@@ -1,0 +1,35 @@
+Step 1: install required packages
+npm install redux react-redux redux-devtools-extension
+
+Note : Debugging , need to install crome extension
+	   Extension name: Redux DevTools
+
+Step 2: Create React View 
+
+Step 3:Create Redux action(action types and action)
+
+Step 4: create Redux reducer (pure function, it taking two arg) 
+ie one ie state and another is action 
+
+Step 5:create rootReducer.js(to combine all reducers)
+
+Step 6: create Redux store.js ( .creteStore())
+
+Step 7:Establish connection - React to Redux 
+
+	<Provider store={store}>
+	<App/>
+	</Provider>
+
+Step 8: Store reflect back view
+        Read Redux store(states) to view
+		useSelector((state)=>{return state})
+===========================================
+How to dispatch an action?
+
+useDispatch() from - react-redux
+
+How to read redux store(group of state) to react view?
+
+useSelector()
+	
